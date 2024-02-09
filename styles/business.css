@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* pre-defined styles*/
+
+p, a, h5 {
+    font-family: 'urbanist', sans-serif;
+    color: white;
+    /* color: white; */
+}
+
+a {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    color: white;
+    font-family: 'kanit', sans-serif;
+    text-transform: capitalize;
+    /* h2 in sec-3 uses urbanist */
+}
+.third-sec h2 {
+    font-family: 'urbanist', sans-serif !important;
+}
+h3 {
+    text-transform: uppercase !important;
+}
+h5, h4 {
+    text-transform: capitalize;
+}
+
+/* end of pre-defined styles */
+
+/* navbar styles */
+nav {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav img {
+    margin: 5px 0 5px 20px;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links a {
+    padding: 22px 40px;
+    transition: 0.5s;
+}
+
+.links a:hover, #active {
+    color: black;
+    background-color: lightcyan;
+}
+
+.lang {
+    margin: 0 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lang p {
+    padding: 5px;
+    /* font-size: 13px; */
+}
+
+.flags img {
+    border-radius: 40%;
+}
+
+/* end of navbar styles */
+
+main {
+    background-color: #161616;
+}
+main h1 {
+    padding: 110px 0 50px;
+    text-align: center;
+    color: lightcyan;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.cards-container {
+    padding: 0 0 50px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card {
+    margin: 20px 10px;
+    width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img {
+    margin: 20px 190px 0;
+    filter: grayscale(100%);
+}
+.card h3 {
+    margin: 20px 0;
+    text-transform: uppercase;
+    color: lightcyan;
+    font-size: 25px;
+    font-weight: 500;
+}
+.card p {
+    margin: 0 45px 10px;
+    color: #cdd8d8;
+    text-align: center;
+    font-size: 20px;
+}
+.card a {
+    margin: 10px 0 40px;
+    color: lightcyan;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: 0.4s;
+}
+.card a:hover {
+    color: rgb(150, 172, 172)
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #0c0c0c;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    width: 350px;
+}
+
+.footer-content {
+    padding: 30px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-left img {
+    margin: 0 0 50px 0;
+}
+.footer-left p {
+    width: 90%;
+    text-align: center;
+}
+
+.footer-middle {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-middle h3, .footer-right h3{
+    margin: 0 0 20px 0;
+    color: lightcyan;
+    font-weight: 800;
+    font-size: 25px
+}
+
+.phoneNo {
+    margin: 0 0 30px 0;
+    display: flex;
+}
+.phoneNo p {
+    margin: 0 0 0 10px;
+}
+
+.address {
+    margin: 0 0 30px 0;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.address p {
+    text-align: center;
+}
+
+.socialLinks {
+    display: flex;
+}
+.socialHover {
+    margin: 0 5px;
+    position: relative;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.socialLinks a img {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+.facebook:hover {
+    background-color: blue;
+}
+.insta:hover {
+    background-color: purple;
+}
+.maps:hover {
+    background-color: yellowgreen;
+}
+
+.footer-right {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-right h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.businessInfo {
+    margin: 0 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.businessInfo-data {
+    margin: 0 0 0 10px;
+}
+.businessInfo-data p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.copyright {
+    padding: 20px 0;
+    text-align: center;
+}

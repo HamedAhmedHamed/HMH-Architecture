@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* pre-defined styles*/
+
+p, a, h5 {
+    font-family: 'urbanist', sans-serif;
+    color: white;
+    /* color: white; */
+}
+
+a {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    color: white;
+    font-family: 'kanit', sans-serif;
+    text-transform: capitalize;
+    /* h2 in sec-3 uses urbanist */
+}
+.third-sec h2 {
+    font-family: 'urbanist', sans-serif !important;
+}
+h3 {
+    text-transform: uppercase !important;
+}
+h5, h4 {
+    text-transform: capitalize;
+}
+
+/* end of pre-defined styles */
+
+/* navbar styles */
+nav {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav img {
+    margin: 5px 0 5px 20px;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links a {
+    padding: 22px 40px;
+    transition: 0.5s;
+}
+
+.links a:hover, #active {
+    color: black;
+    background-color: lightcyan;
+}
+
+.lang {
+    margin: 0 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lang p {
+    padding: 5px;
+    /* font-size: 13px; */
+}
+
+.flags img {
+    border-radius: 40%;
+}
+
+/* end of navbar styles */
+
+/* first-sec styles */
+.first-sec {
+    background-image: url("https://wallpapercave.com/wp/wp2290353.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; 
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 110vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main {
+    margin: 0 200px 0 0;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+#highlight {
+    color: lightcyan;
+}
+
+.main p {
+    padding: 50px 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+.main a {
+    padding: 20px 40px;
+    color: black;
+    background-color: lightcyan;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+
+.main a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* end of first-sec styles */
+
+/* second-sec styles */
+.second-sec {
+    width: 100%;
+    height: 80vh;
+    background-color: #181818;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.preview {
+    width: 480px;
+}
+
+.preview h2 {
+    margin: 0 0 30px 0;
+    font-size: 50px;
+    font-weight: 400;
+    color: lightcyan;
+}
+
+.preview p {
+    font-size: 18px;
+}
+
+.listElements {
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.listElements li {
+    padding: 0 0 25px 0;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.listContent {
+    margin: 0 0 0 20px;
+}
+
+.listContent h5 {
+    font-size: 22px;
+    font-weight: 500;
+    color: lightcyan;
+}
+
+.listContent p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.listElements a {
+    padding: 20px 0 0 0;
+    text-align: center;
+    font-size: 20px;
+    color: lightcyan;
+    transition: 0.4s;
+}
+.listElements a:hover {
+    color: white;
+}
+
+/* end of second-sec styles */
+
+/* third-sec styles */
+.third-sec {
+    width: 100%;
+    height: 60vh;
+    background-color: #1b1b1b;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.third-sec h2 {
+    width: 460px;
+    font-size: 50px;
+}
+
+#highlight-thirdSec {
+    color: lightcyan;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.third-sec img {
+    border-radius: 30px;
+}
+
+ /* end of third-sec */
+
+ /* client-sec */
+.clients-sec {
+    padding: 0 70px 20px 70px;
+    width: 100%;
+    height: auto;
+    background-color: #181818;
+}
+
+.clients-sec h2 {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 55px;
+    font-weight: 600;
+    color: lightcyan;
+}
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientContent {
+    padding: 0 0 50px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.clientContent img{
+   margin: 0 55px 20px;
+}
+
+.clientContent p {
+    font-weight: 250;
+    font-size: 20px;
+    color: lightcyan;
+}
+
+#specialSizing {
+    margin: 0 5px 20px !important;
+}
+
+/* end of client-sec */
+
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: #0c0c0c;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    width: 350px;
+}
+
+.footer-content {
+    padding: 30px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-left img {
+    margin: 0 0 50px 0;
+}
+.footer-left p {
+    width: 90%;
+    text-align: center;
+}
+
+.footer-middle {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-middle h3, .footer-right h3{
+    margin: 0 0 20px 0;
+    color: lightcyan;
+    font-weight: 800;
+    font-size: 25px
+}
+
+.phoneNo {
+    margin: 0 0 30px 0;
+    display: flex;
+}
+.phoneNo p {
+    margin: 0 0 0 10px;
+}
+
+.address {
+    margin: 0 0 30px 0;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.address p {
+    text-align: center;
+}
+
+.socialLinks {
+    display: flex;
+}
+.socialHover {
+    margin: 0 5px;
+    position: relative;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.socialLinks a img {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+.facebook:hover {
+    background-color: blue;
+}
+.insta:hover {
+    background-color: purple;
+}
+.maps:hover {
+    background-color: yellowgreen;
+}
+
+.footer-right {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-right h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.businessInfo {
+    margin: 0 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.businessInfo-data {
+    margin: 0 0 0 10px;
+}
+.businessInfo-data p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.copyright {
+    padding: 20px 0;
+    text-align: center;
+}
